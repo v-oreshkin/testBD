@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class GetConnect {
-    public static Connection getValueForConnectToDatabes(String propertiesFilePath) throws SQLException {
+    public static Connection getValueForConnectToDatabase(String propertiesFilePath) throws SQLException {
         Logger.getInstance().info("Get value from properties file");
         Properties props = new Properties();
         try (InputStream in = Files.newInputStream(Paths.get(propertiesFilePath))) {
