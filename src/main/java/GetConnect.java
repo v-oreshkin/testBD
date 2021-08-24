@@ -10,8 +10,9 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class GetConnect {
+
     public static Connection getValueForConnectToDatabase(String propertiesFilePath) throws SQLException {
-        Logger.getInstance().info("Get value from properties file");
+        Logger.getInstance().info("Get value for connect");
         Properties props = new Properties();
         try (InputStream in = Files.newInputStream(Paths.get(propertiesFilePath))) {
             props.load(in);

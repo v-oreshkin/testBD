@@ -6,7 +6,7 @@ import java.sql.SQLException;
 public class TestBD {
     public static void main(String[] args){
         Logger.getInstance().info("Start");
-        try(Connection connection = GetConnect.getValueForConnectToDatabase(GlobalConstants.PATH_TO_SQL_PROPERTIES_FILE)) {
+        try(Connection connection = GetConnect.getValueForConnectToDatabase(GlobalConstants.PATH_TO_SQL_PROPERTIES_FILE_FOR_CONNECT)) {
             Logger.getInstance().info("Connection successful");
             DBWork.insertRowInTable(connection,ValuesFromPropertiesFiles
                     .getValue("fields",GlobalConstants.PATH_TO_FILE_FOR_TS1),ValuesFromPropertiesFiles
