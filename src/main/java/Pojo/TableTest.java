@@ -32,8 +32,7 @@ public class TableTest {
     }
     @Override
     public String toString() {
-        return "TableTest{" +
-                "id=" + id +
+        return "id=" + id +
                 ", name='" + name + '\'' +
                 ", status_id=" + status_id +
                 ", method_name='" + method_name + '\'' +
@@ -43,8 +42,7 @@ public class TableTest {
                 ", end_time='" + end_time + '\'' +
                 ", env='" + env + '\'' +
                 ", browser='" + browser + '\'' +
-                ", author_id=" + author_id +
-                '}';
+                ", author_id=" + author_id;
     }
 
     public int getId() {
